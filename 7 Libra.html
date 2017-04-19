@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 600px;
+       }
+    </style>
+  </head>
+  <body>
+    <h3><center>Libra</center></h3>
+    <center><div id="map"></div></center>
+    <script>
+function initMap() {
+ var salaloi = {lat: 14.980551, lng: 102.116532};
+  var haripunchai = {lat: 18.577300, lng: 99.007996};
+  var jammadevhistatue = {lat: 18.574689, lng:  99.004806};
+  var loikro = {lat: 18.784680, lng: 98.996832};
+  var centerpoint = {lat: 15.342550, lng: 101.026561};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 5,
+    center: centerpoint
+  });
+  var marker = new google.maps.Marker({
+    position: salaloi,
+    map: map
+  });
+    var marker2 = new google.maps.Marker({
+    position: haripunchai,
+    map: map
+  });
+    var marker3 = new google.maps.Marker({
+    position: jammadevhistatue,
+    map: map
+  });
+    var marker4 = new google.maps.Marker({
+    position: loikro,
+    map: map
+  });
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNsUOzYqWJjOIialD9pkEMXynLnG2yLXs&callback=initMap">
+    </script>
+  </body>
+</html>

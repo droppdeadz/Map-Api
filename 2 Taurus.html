@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 600px;
+       }
+    </style>
+  </head>
+  <body>
+    <h3><center>Taurus</center></h3>
+    <center><div id="map"></div></center>
+    <script>
+function initMap() {
+  var watprasrimahatat = {lat: 13.873674, lng:  100.594807};
+  var watpathummasopon = {lat: 14.807828, lng: 100.614155};
+  var loikro = {lat: 18.784680, lng: 98.996832};
+  var salaloi = {lat: 14.980551, lng: 102.116532};
+  var centerpoint = {lat: 15.342550, lng: 101.026561};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 5,
+    center: centerpoint
+  });
+  var marker = new google.maps.Marker({
+    position: watprasrimahatat,
+    map: map
+  });
+    var marker2 = new google.maps.Marker({
+    position: watpathummasopon,
+    map: map
+  });
+    var marker3 = new google.maps.Marker({
+    position: loikro,
+    map: map
+  });
+    var marker4 = new google.maps.Marker({
+    position: salaloi,
+    map: map
+  });
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNsUOzYqWJjOIialD9pkEMXynLnG2yLXs&callback=initMap">
+    </script>
+  </body>
+</html>

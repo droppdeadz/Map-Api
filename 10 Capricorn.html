@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #map {
+            height: 400px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+<h3><center>Capricorn</center></h3>
+<center><div id="map"></div></center>
+<script>
+    function initMap() {
+        var haripunchai = {lat: 18.577300, lng: 99.007996};
+        var jammadevhistatue = {lat: 18.574689, lng:  99.004806};
+        var banden = {lat: 19.157189, lng:  98.979449};
+        var salaloi = {lat: 14.980551, lng: 102.116532};
+        var goldmountain = {lat: 14.368261, lng: 100.539424};
+        var watprasrimahatat = {lat: 13.873674, lng:  100.594807};
+        var watpathummasopon = {lat: 14.807828, lng: 100.614155};
+        var centerpoint = {lat: 15.342550, lng: 101.026561};
+        var kae = {lat: 14.487527, lng: 100.117216};
+        var klongwan= {lat: 11.750182, lng: 99.789424};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 5,
+            center: centerpoint
+        });
+        var marker = new google.maps.Marker({
+            position: haripunchai,
+            map: map
+        });
+        var marker2 = new google.maps.Marker({
+            position: jammadevhistatue,
+            map: map
+        });
+        var marker3 = new google.maps.Marker({
+            position: banden,
+            map: map
+        });
+        var marker4 = new google.maps.Marker({
+            position: salaloi,
+            map: map
+        });
+        var marker5 = new google.maps.Marker({
+            position: goldmountain,
+            map: map
+        });
+        var marker6 = new google.maps.Marker({
+            position: watprasrimahatat,
+            map: map
+        });
+        var marker7 = new google.maps.Marker({
+            position: watpathummasopon,
+            map: map
+        });
+        var marker8 = new google.maps.Marker({
+            position: kae,
+            map: map
+        });
+        var marker9 = new google.maps.Marker({
+            position: klongwan,
+            map: map
+        });
+
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNsUOzYqWJjOIialD9pkEMXynLnG2yLXs&callback=initMap">
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 600px;
+       }
+    </style>
+  </head>
+  <body>
+    <h3><center>Leo</center></h3>
+    <center><div id="map"></div></center>
+    <script>
+function initMap() {
+  var banden = {lat: 19.157189, lng:  98.979449};
+  var goldmountain = {lat: 14.368261, lng: 100.539424};
+  var salaloi = {lat: 14.980551, lng: 102.116532};
+  var buakwan = {lat: 13.869233, lng: 100.535032};
+  var centerpoint = {lat: 15.342550, lng: 101.026561};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 5,
+    center: centerpoint
+  });
+  var marker = new google.maps.Marker({
+    position: banden,
+    map: map
+  });
+    var marker2 = new google.maps.Marker({
+    position: goldmountain,
+    map: map
+  });
+    var marker3 = new google.maps.Marker({
+    position: salaloi,
+    map: map
+  });
+    var marker4 = new google.maps.Marker({
+    position: buakwan,
+    map: map
+  });
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNsUOzYqWJjOIialD9pkEMXynLnG2yLXs&callback=initMap">
+    </script>
+  </body>
+</html>
