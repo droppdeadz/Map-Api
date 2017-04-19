@@ -15,11 +15,13 @@
 function initMap() {
   var haripunchai = {lat: 18.577300, lng: 99.007996};
   var salaloi = {lat: 14.980551, lng: 102.116532};
+  var watpathummasopon = {lat: 14.807828, lng: 100.614155};
   var buakwan = {lat: 13.869233, lng: 100.535032};
   var watprasrimahatat = {lat: 13.873674, lng:  100.594807};
   var banden = {lat: 19.157189, lng:  98.979449};
   var goldmountain = {lat: 14.368261, lng: 100.539424};
-  var klongwan= {lat: 11.750182, lng: 99.789424};
+  var klongwan= {lat: 11.750182, lng: 99.789424};var songtham= {lat: 13.662468 , lng: 100.535806,};
+  var kae = {lat: 14.487527, lng: 100.117216};
   var centerpoint = {lat: 15.342550, lng: 101.026561};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
@@ -53,6 +55,18 @@ function initMap() {
     position: klongwan,
     map: map
   });
+    var marker8 = new google.maps.Marker({
+        position: watpathummasopon,
+        map: map
+    });
+    var marker9 = new google.maps.Marker({
+        position: kae,
+        map: map
+    });
+    var marker10 = new google.maps.Marker({
+        position: songtham,
+        map: map
+    });
 }
     </script>
     <script async defer
